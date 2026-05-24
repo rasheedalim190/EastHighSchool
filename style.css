@@ -79,7 +79,7 @@ header nav a:hover {
   flex-direction: column;
   line-height: 1.2;
   letter-spacing: 1px;
-  background-image: url(images/EastHigh.jpg);
+  background-image: url(./images/EastHigh.jpg);
   background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
