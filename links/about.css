@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  text-shadow: #44444469 2px 2px 4px;
+}
+
+.graduate-regular {
+  font-family: "Graduate", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+  color: #222;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "aside content"
+    "footer footer";
+  grid-template-columns: 350px 1fr;
+  gap: 10px;
+  border: 1px solid black;
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  background-color: #b30000;
+  color: white;
+  margin: auto 0;
+  margin-bottom: -16px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 100;
+  font-family: "Graduate", serif;
+}
+
+
+#store-image {
+    display: block;
+    height: auto;
+    width: 100px;
+    margin: 0 auto;
+}
+
+
+ .menu a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+    font-family: "Graduate", serif;
+
+}
+.menu{
+    display: flex;
+    gap: 20px;
+    font-weight: bolder;
+    font-size: larger;
+   
+
+}
+
+.menu a:hover {
+transition: color 0.3s ease;
+color:black;
+}
+
+
+/* ====== ABOUT US ====== */
+#about {
+  background-color: #f9f9f9;
+  padding-top: 5rem;
+  padding-bottom:5rem;
+  height: 1000px;
+  background-image: url(/images/banner-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y:bottom;
+  
+  
+}
+
+#about h2 {
+    text-align: center;
+    padding-bottom: 3rem;
+    
+}
+
+#about h2, h3 {
+  font-size: 2rem;
+  color: rgb(179, 0, 0);
+  line-height: 1.8;
+}
+
+#about p {
+  text-align: justify;
+  line-height: 1.8;
+}
+#about article{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.mission {
+  margin-left: 2rem;
+  max-width: 400px;
+  
+}
+
+#about article {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.core-values {
+  background-color: white;
+  padding: 5rem 15rem 10rem;
+  text-align: center;
+}
+
+.core-values h2 {
+  font-size: 2rem;
+  color: rgb(179, 0, 0);
+  margin-bottom: 3rem;
+
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+.value-box {
+  max-width: 300px;
+}
+
+.value-box h3 {
+  color: rgb(179, 0, 0);
+  font-size: 1.25rem;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.value-box p {
+  color: black;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Second row alignment */
+.value-box:nth-child(4),
+.value-box:nth-child(5) {
+  grid-column: span 1;
+  justify-self: center;
+}
+
+
+/* ====== MASCOT ====== */
+
+#ehs-logo {
+    height: auto;
+    text-align: center;
+    color: red;
+    background-color: #c62b29;
+    padding-bottom: 5rem;
+}
+
+#ehs-logo h2 {
+    font-size: 3rem;
+    color: white;
+    line-height: 1.8;
+    padding-top: 3rem;
+      font-family: "Graduate", serif;
+
+}
+
+#ehs-logo img{
+    text-align: center;
+    width: 450px;
+    height: auto;
+
+}
+
+#ehs-logo-descrip {
+    max-width: auto;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.8;
+    font-weight: 500;
+    width: auto;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+#ehs-logo-descrip #getcha{
+    text-align: center;
+    font-style: italic;
+    max-width: 900px;
+    margin-left:50%;
+    transform: translateX(-50%);
+    
+}

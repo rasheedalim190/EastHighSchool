@@ -1,0 +1,112 @@
+     td {
+            text-align: center;
+             padding: 2rem;
+        }
+        body {
+            line-height: 1.8;
+
+        }
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Helvetica, sans-serif;
+        text-shadow: #44444469 2px 2px 4px;
+        }
+
+        th {
+            font-family: Graduate, serif;
+            font-size: 1.6rem;
+            color: rgb(179, 0, 0);
+        }
+
+        td {
+            font-size: 1.2rem;
+            color: rgb(179, 0, 0);
+        }
+
+        table {
+            width: 100%;
+            border: rgb(219, 5, 5) solid 1px;
+            padding: 5rem;
+            
+        }
+
+        .tr, .td, #head {
+            border-bottom: rgb(219, 5, 5) solid 1px;
+        }
+
+    
+
+        img {
+            border-radius:70rem;
+            width: 10rem;
+            height: 10rem;
+    
+        }
+        
+
+     
+        
+
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "aside content"
+    "footer footer";
+  grid-template-columns: 350px 1fr;
+  gap: 10px;
+  border: 1px solid black;
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  background-color: #b30000;
+  color: white;
+  margin: auto 0;
+  margin-bottom: -16px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 100;
+  font-family: "Graduate", serif;
+}
+
+
+#store-image {
+    display: block;
+    height: auto;
+    width: 100px;
+    margin: 0 auto;
+}
+
+
+ .menu a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+    font-family: "Graduate", serif;
+
+}
+.menu{
+    display: flex;
+    gap: 20px;
+    font-weight: bolder;
+    font-size: larger;
+   
+
+}
+
+.menu a:hover {
+transition: color 0.3s ease;
+color:black;
+}
+

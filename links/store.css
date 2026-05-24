@@ -1,0 +1,236 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: black
+  text-align: justify;
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== HEADER ====== */
+
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "aside content"
+    "footer footer";
+  grid-template-columns: 350px 1fr;
+  gap: 10px;
+  border: 1px solid black;
+  
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  background-color: #b30000;
+  color: white;
+  margin: auto 0;
+  margin-bottom: -16px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 100;
+  font-family: "Graduate", serif;
+}
+
+
+#store-image {
+    display: block;
+    height: auto;
+    width: 100px;
+    margin: 0 auto;
+}
+
+
+ .menu a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+
+}
+.menu{
+    display: flex;
+    gap: 20px;
+    font-weight: bolder;
+    font-size: larger;
+   
+
+}
+
+.menu a:hover {
+transition: color 0.3s ease;
+color:black;
+}
+
+/* ===== ORDER FORM ===== */
+ .form-section {
+      max-width: 500px;
+      background: rgb(155, 150, 150, 0.4);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #ffffff;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.8;
+    }
+
+    label {
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    input, textarea, button {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #e63946;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: 20px;
+      margin-right: 3px;
+    }
+
+    button:hover {
+      background-color: #d62828;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== SIDEBAR ====== */
+
+.Sidebar {
+    grid-area: aside;
+    padding: 24px;
+    background-color: #b30000;
+    border-right: 1px solid black;
+    color: white;
+    padding-left: 35px;
+    padding-bottom: 110px;
+    margin-right: 60px;
+    max-height: 100%;
+    float:left;
+}
+
+.Sidebar h2 {
+  font-family: "Graduate", serif;
+}
+.content {
+  grid-area: content;
+    padding: 24px;
+    border-bottom: 1px solid #423d39;
+    text-align: center ;
+    max-height: auto;
+    margin-bottom: 295px;
+
+    
+    
+}
+
+.content h3 {
+  font-family: "Graduate", serif;
+  text-align: center;
+  color: #b30000;
+}
+
+.container div {
+  padding: 10px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    
+    
+}
+
+.card-merch {
+  background-color: #e2d9d2;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.card-merch img {
+  border-radius: 8px;
+}
+
+.card {
+    min-height: 120px;
+    padding: 20px;
+    margin-top:20px;
+    background-color: #e2d9d2;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba (0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 8%;
+    
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas: 
+        "header"
+        "sidebar"
+        "content"
+        "footer";
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+footer {
+    grid-area: footer;
+    margin: auto 0;
+    background-color: #423d39;
+    opacity: 0.6;
+    color: white;
+    padding:30px;
+    font-size: small;
+    text-align: center;
+    
+}
