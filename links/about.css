@@ -223,3 +223,64 @@ color:black;
     transform: translateX(-50%);
     
 }
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "content"
+      "aside"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu {
+    flex-direction: row;
+    gap: 2px;
+  }
+
+  #about article {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 3rem;
+  }
+
+  .mission {
+    margin-left: 0;
+    max-width: none;
+    padding: 0 1rem;
+  }
+
+  .core-values {
+    padding: 2rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  
+#ehs-logo h2 {
+    font-size: 2rem;
+    padding: 2rem 1rem;
+}
+
+#ehs-logo img{
+    width: 70%;
+    height: auto;
+}
+
+#ehs-logo-descrip #getcha{
+    font-size: 1rem;
+    width: 100%;
+    text-indent: 0%;
+    margin-left:50%;
+    transform: translateX(-50%);
+}
+}
