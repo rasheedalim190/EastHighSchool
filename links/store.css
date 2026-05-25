@@ -209,20 +209,6 @@ color:black;
     
 }
 
-@media (max-width: 768px) {
-    .container {
-        grid-template-areas: 
-        "header"
-        "sidebar"
-        "content"
-        "footer";
-        grid-template-columns: 1fr;
-    }
-}
-
-
-
-
 footer {
     grid-area: footer;
     margin: auto 0;
@@ -234,3 +220,83 @@ footer {
     text-align: center;
     
 }
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "content"
+      "aside"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+
+  .header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    gap: 2px;
+  }
+
+  .menu a {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  #store-image {
+    width: 60px;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Sidebar {
+    width: 100%;
+    margin: 0 0 4rem;
+    border-right: none;
+    border-bottom: 2px solid #b30000;
+    padding-bottom: 5rem;
+    
+
+  }
+
+  .content {
+    order: 2; /* products follow form */
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    padding: 0 5rem;
+  }
+
+  .card-merch img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content h3 {
+    padding: 1rem;
+  }
+  .form-section {
+    max-width: 100%;
+    margin-right: 12%;
+    width: 75%;
+    height: auto;
+  }
+}
+
+
