@@ -211,13 +211,17 @@ footer #copyright {
 }
 
 @media (max-width: 768px) {
+
+  #enrollment-process h1, #apply h2{
+    font-size: 1.5rem;
+  }
   #apply {
     padding: 4rem 2rem;
   }
   
   .enrollment-form {
     padding: 2rem;
-    max-width: 100%;
+    max-width: 75%;
   }
   
   form {
@@ -229,3 +233,32 @@ footer #copyright {
     font-size: 1rem;
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "content"
+      "aside"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+
+  .header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    gap: 2px;
+  }
+
+  .menu a {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  #store-image {
+    width: 60px;
+    height: auto;
+  }
