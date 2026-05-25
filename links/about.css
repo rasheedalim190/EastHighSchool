@@ -234,14 +234,23 @@ color:black;
     grid-template-columns: 1fr;
   }
 
-  .header {
-    flex-direction: column;
-    gap: 10px;
+  .header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    gap: 2px;
   }
 
-  .menu {
-    flex-direction: row;
-    gap: 2px;
+  .menu a {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  #store-image {
+    width: 60px;
+    height: auto;
   }
 
   #about article {
@@ -267,8 +276,9 @@ color:black;
 
   
 #ehs-logo h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 2rem 1rem;
+
 }
 
 #ehs-logo img{
